@@ -1,12 +1,27 @@
+import { Outlet, useLoaderData,} from "react-router-dom"
 import Banner from "../components/Banner"
+import Categories from "../components/Categories"
+// import AllCards from "../components/AllCards"
+
+
+
 
 
 function Home() {
+const categories = useLoaderData()
+// console.log(typeof(categories))
   return (
     <div>
         
         <Banner></Banner>
-    </div>
+        <div className="h-96"></div>
+        <div className="flex container mx-auto justify-between">
+        <Categories categories={categories}></Categories> 
+       
+        <Outlet></Outlet>
+        </div>
+     
+      </div>
   )
 }
 

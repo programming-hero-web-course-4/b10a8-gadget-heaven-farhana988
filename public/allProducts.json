@@ -1,0 +1,178 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "Dell XPS 13",
+        "product_image": "url_to_image1.jpg",
+        "category": "Laptops",
+        "price": 999.99,
+        "description": "A high-performance laptop with a stunning display.",
+        "Specification": ["13.3-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "2",
+        "product_title": "Apple MacBook Air",
+        "product_image": "url_to_image2.jpg",
+        "category": "Laptops",
+        "price": 1099.00,
+        "description": "Lightweight laptop with exceptional battery life.",
+        "Specification": ["13.3-inch Retina", "Apple M1", "8GB RAM", "256GB SSD"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "3",
+        "product_title": "HP Spectre x360",
+        "product_image": "url_to_image3.jpg",
+        "category": "Laptops",
+        "price": 1299.99,
+        "description": "2-in-1 convertible laptop with sleek design.",
+        "Specification": ["13.3-inch 4K", "Intel i7", "16GB RAM", "1TB SSD"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "4",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "url_to_image4.jpg",
+        "category": "Laptops",
+        "price": 1399.00,
+        "description": "Durable and lightweight business laptop.",
+        "Specification": ["14-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "5",
+        "product_title": "Asus ZenBook 14",
+        "product_image": "url_to_image5.jpg",
+        "category": "Laptops",
+        "price": 849.99,
+        "description": "Compact laptop with powerful performance.",
+        "Specification": ["14-inch FHD", "Intel i5", "8GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "6",
+        "product_title": "Acer Swift 3",
+        "product_image": "url_to_image6.jpg",
+        "category": "Laptops",
+        "price": 699.99,
+        "description": "Affordable and lightweight laptop.",
+        "Specification": ["14-inch FHD", "AMD Ryzen 7", "8GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "7",
+        "product_title": "Samsung Galaxy S21",
+        "product_image": "url_to_image7.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "Flagship smartphone with impressive camera.",
+        "Specification": ["6.2-inch display", "8GB RAM", "128GB storage"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "8",
+        "product_title": "iPhone 12",
+        "product_image": "url_to_image8.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "Powerful smartphone with a stunning design.",
+        "Specification": ["6.1-inch display", "4GB RAM", "64GB storage"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "9",
+        "product_title": "Apple Watch Series 6",
+        "product_image": "url_to_image9.jpg",
+        "category": "Smart Watches",
+        "price": 399.99,
+        "description": "Smart watch with health and fitness tracking.",
+        "Specification": ["GPS", "Always-On Retina display", "Water resistant"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "10",
+        "product_title": "Samsung Galaxy Watch 3",
+        "product_image": "url_to_image10.jpg",
+        "category": "Smart Watches",
+        "price": 399.99,
+        "description": "Stylish smartwatch with advanced health features.",
+        "Specification": ["GPS", "Blood pressure monitoring", "LTE"],
+        "availability": false,
+        "rating": 4.5
+    },
+    {
+        "product_id": "11",
+        "product_title": "Logitech MX Master 3",
+        "product_image": "url_to_image11.jpg",
+        "category": "Accessories",
+        "price": 99.99,
+        "description": "Advanced wireless mouse with customizable buttons.",
+        "Specification": ["Ergonomic design", "Bluetooth", "Rechargeable battery"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "12",
+        "product_title": "Apple AirPods Pro",
+        "product_image": "url_to_image12.jpg",
+        "category": "Accessories",
+        "price": 249.00,
+        "description": "Wireless earbuds with active noise cancellation.",
+        "Specification": ["In-ear design", "Sweat and water resistant", "Active noise cancellation"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "13",
+        "product_title": "MacBook Pro 16-inch",
+        "product_image": "url_to_image13.jpg",
+        "category": "MacBook",
+        "price": 2399.00,
+        "description": "Powerful laptop designed for professionals.",
+        "Specification": ["16-inch Retina", "Apple M1 Pro", "16GB RAM", "1TB SSD"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "14",
+        "product_title": "MacBook Pro 14-inch",
+        "product_image": "url_to_image14.jpg",
+        "category": "MacBook",
+        "price": 1999.00,
+        "description": "Versatile laptop with outstanding performance.",
+        "Specification": ["14-inch Retina", "Apple M1", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "15",
+        "product_title": "iPhone 13",
+        "product_image": "url_to_image8.jpg",
+        "category": "iPhone",
+        "price": 799.00,
+        "description": "Powerful smartphone with advanced features.",
+        "Specification": ["6.1-inch display", "4GB RAM", "128GB storage"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "16",
+        "product_title": "iPhone 12",
+        "product_image": "url_to_image9.jpg",
+        "category": "iPhone",
+        "price": 699.99,
+        "description": "A stunning design with powerful performance.",
+        "Specification": ["6.1-inch display", "4GB RAM", "64GB storage"],
+        "availability": true,
+        "rating": 4.5
+    }
+]

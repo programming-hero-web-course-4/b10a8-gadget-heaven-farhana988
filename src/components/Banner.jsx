@@ -1,4 +1,5 @@
 // import React from 'react'
+import { Link } from "react-router-dom";
 import banner from "../assets/banner.jpg";
 import Heading from "./Heading";
 function Banner() {
@@ -14,7 +15,7 @@ function Banner() {
         }
       ></Heading>
       <button className="bg-white rounded-2xl px-9 py-3 text-black font-bold text-xl mt-6">
-        Shop Now
+       <Link to={'/dashboard'}> Shop Now</Link>
       </button>
       <div className="border-2 absolute top-64 left-7 lg:top-80 lg:left-44 p-2 lg:p-4  rounded-2xl ">
         <img

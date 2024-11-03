@@ -1,0 +1,32 @@
+[
+  {
+    "product_id": "1",
+    "product_title": "Dell XPS 13",
+    "category": "Laptops"
+  },
+  {
+    "product_id": "7",
+    "product_title": "Samsung Galaxy S21",
+    "category": "Phones"
+  },
+  {
+    "product_id": "10",
+    "product_title": "Samsung Galaxy Watch 3",
+    "category": "Smart Watches"
+  },
+  {
+    "product_id": "11",
+    "product_title": "Logitech MX Master 3",
+    "category": "Accessories"
+  },
+  {
+    "product_id": "13",
+    "product_title": "MacBook Pro 16-inch",
+    "category": "MacBook"
+  },
+  {
+    "product_id": "16",
+    "product_title": "iPhone 12",
+    "category": "iPhone"
+  }
+]
