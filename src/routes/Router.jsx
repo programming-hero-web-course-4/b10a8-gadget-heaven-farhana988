@@ -6,6 +6,8 @@ import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
 
 import AllCards from "../components/AllCards";
+import ProductDetails from "../pages/ProductDetails";
+
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,7 @@ const router = createBrowserRouter([
                 element:<AllCards></AllCards>,
                 loader:()=> fetch ('../allProducts.json')
               },
+              
 
         ]
       },
@@ -38,6 +41,11 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/productDetails/:product_id",
+        element:<ProductDetails></ProductDetails>,
+        loader:()=> fetch ('../allProducts.json')
       },
     ],
   },
