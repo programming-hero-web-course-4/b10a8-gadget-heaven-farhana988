@@ -4,13 +4,8 @@ import { CiHeart } from "react-icons/ci";
 
 function Navbar() {
   return (
-    <div>
-      
-      
-      
-
-      {/* ---------------------------------------------- */}
-      <div className="navbar bg-base-100">
+    
+      <div className="navbar bg-[#9538E2] w-[97%] mt-6 mx-auto rounded-xl text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,41 +29,44 @@ function Navbar() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-              <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/"}>Home</NavLink>
               </li>
               <li>
-              <NavLink to={"/statistics"}>Statistics</NavLink>
+                <NavLink to={"/statistics"}>Statistics</NavLink>
               </li>
               <li>
-              <NavLink to={"/dashboard"}>Dashboard</NavLink>
+                <NavLink to={"/dashboard"}>Dashboard</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-2xl font-bold">Gadget Heaven </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-          <li>
-              <NavLink to={"/"}>Home</NavLink>
-              </li>
-              <li>
-              <NavLink to={"/statistics"}>Statistics</NavLink>
-              </li>
-              <li>
-              <NavLink to={"/dashboard"}>Dashboard</NavLink>
-              </li>
+            <li>
+              <NavLink className="font-bold text-lg" to={"/"}>Home</NavLink>
+            </li>
+            <li>
+              <NavLink className="font-bold text-lg" to={"/statistics"}>Statistics</NavLink>
+            </li>
+            <li>
+              <NavLink className="font-bold text-lg" to={"/dashboard"}>Dashboard</NavLink>
+            </li>
           </ul>
         </div>
-        <div className="navbar-end gap-4">
-         
-          <Link> <CiShoppingCart></CiShoppingCart> </Link>
-           
-          
-          <Link> <CiHeart></CiHeart> </Link>
-           
+        <div className="navbar-end gap-4 mr-7">
+          <Link className="font-extrabold text-3xl rounded-full bg-white text-black p-3">
+            {" "}
+            <CiShoppingCart></CiShoppingCart>{" "}
+          </Link>
+
+          <Link className="font-extrabold text-3xl rounded-full bg-white text-black p-3">
+            {" "}
+            <CiHeart></CiHeart>{" "}
+          </Link>
         </div>
       </div>
-    </div>
+    
   );
 }
 
