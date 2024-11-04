@@ -10,6 +10,11 @@ function ShoppingCart() {
     const addCart = getAllProducts();
     setProduct(addCart);
   }, []);
+
+  const handleSort =()=>{
+    const sorted = [...product].sort((a,b)=>b.price-a.price)
+    setProduct(sorted)
+  }
   return (
     <div className="container mx-auto my-20">
       <div className="flex items-center justify-between mb-10 flex-col lg:flex-row gap-20 lg:gap-0">
@@ -18,6 +23,7 @@ function ShoppingCart() {
           <h2>Total cost:</h2>
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
           <button
+          onClick={handleSort}
             className=" flex gap-1 lg:gap-4 items-center text-[#9538E2]  text-sm lg:text-xl font-semibold rounded-full
                 border-2 border-[#9538E2] px-3 lg:px-8 py-2 lg:py-2
                 
@@ -38,10 +44,14 @@ function ShoppingCart() {
           </div>
         </div>
       </div>
-      <div className="px-10 lg:px-32 space-y-6">
-        {product.map((product) => (
-          <Card key={product.id} product={product}></Card>
-        ))}
+       <div className="px-10 lg:px-32 space-y-6">
+        {product.length === 0 ? (
+          <div>Your cart is empty!</div>
+        ) : (
+          product.map((product) => (
+            <Card key={product.product_id} product={product} />
+          ))
+        )}
       </div>
     </div>
   );

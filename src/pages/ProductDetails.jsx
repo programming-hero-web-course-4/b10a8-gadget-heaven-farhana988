@@ -4,18 +4,14 @@ import { CiHeart } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Heading from "../components/Heading";
-import { addToCart, getAllProducts, } from "../utils";
+import { addToCart, addToWish, getAllProducts, } from "../utils";
 
 function ProductDetails() {
   const products = useLoaderData();
- 
-  const { product_id } = useParams();
- 
+  const { product_id } = useParams()
   const [details, setDetails] = useState([]);
-
-
-
   const [isAdd,setIsAdd]=useState(false)
+  const [isAddWish,setIsAddWish]=useState(false)
   useEffect(() => {
    
     const singleDetails = products.find(
@@ -27,6 +23,15 @@ function ProductDetails() {
    if(isExist){
     setIsAdd(true)
    }
+
+   const wishItems = getAllProducts();
+   const isExistW =   wishItems.find(item=> item.product_id ==singleDetails.product_id)
+  if(isExistW){
+   setIsAddWish(true)
+  }
+
+
+
   }, [product_id, products]);
 
   const {
@@ -41,6 +46,10 @@ function ProductDetails() {
   const handleAddToCart= product =>{
     addToCart(product)
     setIsAdd(true)
+  }
+  const handleAddToWish= product =>{
+    addToWish(product)
+    setIsAddWish(true)
   }
   return (
     <div className="relative">
@@ -95,7 +104,10 @@ function ProductDetails() {
               onClick={()=> handleAddToCart(details)}>Add To Card</h2>
               <CiShoppingCart></CiShoppingCart>
             </button>
-            <button className="btn  text-2xl rounded-full bg-white text-black p-3 ">
+            <button 
+             disabled={isAddWish}
+            onClick={()=>handleAddToWish(details)}
+            className="btn  text-2xl rounded-full bg-white text-black p-3 ">
               <CiHeart></CiHeart>
             </button>
           </div>

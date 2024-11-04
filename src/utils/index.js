@@ -20,4 +20,27 @@ const addToCart = (product) => {
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 };
 
-export { addToCart, getAllProducts };
+
+
+const getAllWishProducts = () => {
+    const allw = localStorage.getItem("wishItems");
+    if(allw){
+       const parseAll =JSON.parse(allw)
+       return parseAll
+    }
+    else{
+       return []
+    }
+   };
+// add to wishlist
+
+const addToWish = (product) => {
+    const wishItems = getAllWishProducts();
+    const isExist =   wishItems.find(item=> item.product_id === product.product_id)
+    console.log(isExist)
+    if(isExist) return alert('error')
+    wishItems.push(product);
+    localStorage.setItem("wishItems", JSON.stringify(wishItems));
+  };
+
+export { addToCart, getAllProducts ,addToWish, getAllWishProducts};
