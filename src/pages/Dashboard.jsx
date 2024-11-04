@@ -3,13 +3,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Heading from "../components/Heading";
 
-
 function Dashboard() {
- 
   return (
     <div>
-      {/* heading and button  */}
-      <div className="bg-[#9538E2] py-16">
+      {/* heading and button */}
+      <div className="bg-[#9538E2] py-16 pb-52">
         <Heading
           title={"Dashboard"}
           subtitle={
@@ -21,18 +19,16 @@ function Dashboard() {
           <NavLink to={'cart'}
            className={({ isActive }) =>
             ` text-2xl font-semibold  ${isActive ? 'bg-white text-[#9538E2] text-2xl font-semibold rounded-full border-2 px-9 py-2' 
-              : 'px-9 py-2 rounded-full border-2 text-white bg-[#09080F0D]'}`
+              : 'px-9 py-2 rounded-full border-2 text-white '}`
           }
           >Cart</NavLink>
           <NavLink to={'wishlist'}
           className={({ isActive }) =>
             ` text-2xl font-semibold  ${isActive ? 'bg-white text-[#9538E2] text-2xl font-semibold rounded-full border-2 px-9 py-2' 
-              : 'px-9 py-2 rounded-full border-2 text-white bg-[#09080F0D]'}`
+              : 'px-9 py-2 rounded-full border-2 text-white'}`
           }>Wishlist</NavLink>
         </div>
       </div>
-
-
       <Outlet></Outlet>
     </div>
   );

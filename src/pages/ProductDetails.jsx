@@ -4,34 +4,35 @@ import { CiHeart } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Heading from "../components/Heading";
-import { addToCart, addToWish, getAllProducts, } from "../utils";
+import { addToCart, addToWish, getAllProducts, getAllWishProducts } from "../utils";
 
 function ProductDetails() {
   const products = useLoaderData();
-  const { product_id } = useParams()
+  const { product_id } = useParams();
   const [details, setDetails] = useState([]);
-  const [isAdd,setIsAdd]=useState(false)
-  const [isAddWish,setIsAddWish]=useState(false)
+  const [isAdd, setIsAdd] = useState(false);
+  const [isAddWish, setIsAddWish] = useState(false);
+
   useEffect(() => {
-   
     const singleDetails = products.find(
       (details) => details.product_id == product_id
     );
     setDetails(singleDetails);
     const cartItems = getAllProducts();
-    const isExist =   cartItems.find(item=> item.product_id ==singleDetails.product_id)
-   if(isExist){
-    setIsAdd(true)
-   }
+    const isExist = cartItems.find(
+      (item) => item.product_id == singleDetails.product_id
+    );
+    if (isExist) {
+      setIsAdd(true);
+    }
 
-   const wishItems = getAllProducts();
-   const isExistW =   wishItems.find(item=> item.product_id ==singleDetails.product_id)
-  if(isExistW){
-   setIsAddWish(true)
-  }
-
-
-
+    const wishItems = getAllWishProducts();
+    const isExistW = wishItems.find(
+      (item2) => item2.product_id == singleDetails.product_id
+    );
+    if (isExistW) {
+      setIsAddWish(true);
+    }
   }, [product_id, products]);
 
   const {
@@ -42,15 +43,15 @@ function ProductDetails() {
     Specification,
     rating,
   } = details || {};
-// add to cart button
-  const handleAddToCart= product =>{
-    addToCart(product)
-    setIsAdd(true)
-  }
-  const handleAddToWish= product =>{
-    addToWish(product)
-    setIsAddWish(true)
-  }
+  // add to cart button
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    setIsAdd(true);
+  };
+  const handleAddToWish = (product) => {
+    addToWish(product);
+    setIsAddWish(true);
+  };
   return (
     <div className="relative">
       <div className="bg-[#9538E2] py-16 pb-52">
@@ -95,19 +96,19 @@ function ProductDetails() {
 
           {/* cart and wishlist btn */}
           <div className="flex items-center gap-6 text-lg text-white">
-            <button 
-          disabled={isAdd}
-            className=" btn flex items-center gap-2 bg-[#9538E2] text-lg font-semibold
-             rounded-2xl border-2 px-6 py-2 ">
-              <h2 
-                
-              onClick={()=> handleAddToCart(details)}>Add To Card</h2>
+            <button
+              disabled={isAdd}
+              className=" btn flex items-center gap-2 bg-[#9538E2] text-lg font-semibold
+             rounded-2xl border-2 px-6 py-2 "
+            >
+              <h2 onClick={() => handleAddToCart(details)}>Add To Card</h2>
               <CiShoppingCart></CiShoppingCart>
             </button>
-            <button 
-             disabled={isAddWish}
-            onClick={()=>handleAddToWish(details)}
-            className="btn  text-2xl rounded-full bg-white text-black p-3 ">
+            <button
+              disabled={isAddWish}
+              onClick={() => handleAddToWish(details)}
+              className="btn  text-2xl rounded-full bg-white text-black p-3 "
+            >
               <CiHeart></CiHeart>
             </button>
           </div>

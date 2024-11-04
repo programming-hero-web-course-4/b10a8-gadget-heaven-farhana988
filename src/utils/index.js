@@ -1,4 +1,4 @@
-// get all cart items
+// -------------------         get all cart items
 const getAllProducts = () => {
  const all = localStorage.getItem("cartItems");
  if(all){
@@ -10,7 +10,7 @@ const getAllProducts = () => {
  }
 };
 
-// add to cart
+//  -------------------         add to cart
 const addToCart = (product) => {
   const cartItems = getAllProducts();
   const isExist =   cartItems.find(item=> item.product_id === product.product_id)
@@ -22,6 +22,18 @@ const addToCart = (product) => {
 
 
 
+
+//  -------------------           remove from cart
+
+const removeCart = product_id =>{
+    const cartItems= getAllProducts()
+    const remainCart = cartItems.filter(product=> product.product_id!=product_id)
+    localStorage.setItem("cartItems", JSON.stringify(remainCart))
+}
+
+
+
+// -------------------          get all wish items
 const getAllWishProducts = () => {
     const allw = localStorage.getItem("wishItems");
     if(allw){
@@ -32,7 +44,10 @@ const getAllWishProducts = () => {
        return []
     }
    };
-// add to wishlist
+
+
+
+// -------------------          add to wishlist
 
 const addToWish = (product) => {
     const wishItems = getAllWishProducts();
@@ -43,4 +58,21 @@ const addToWish = (product) => {
     localStorage.setItem("wishItems", JSON.stringify(wishItems));
   };
 
-export { addToCart, getAllProducts ,addToWish, getAllWishProducts};
+
+
+//  -------------------           remove from wishlist
+
+const removeWishlist = product_id =>{
+    const wishItems =  getAllWishProducts()
+    const remainWish = wishItems.filter(product=> product.product_id!=product_id)
+    localStorage.setItem("wishItems", JSON.stringify(remainWish))
+}
+
+
+
+
+
+
+
+
+export { addToCart, getAllProducts ,addToWish, getAllWishProducts ,removeCart ,removeWishlist};

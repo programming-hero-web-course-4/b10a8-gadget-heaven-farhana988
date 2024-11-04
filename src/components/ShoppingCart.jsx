@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import { getAllProducts } from "../utils";
+import { getAllProducts, removeCart } from "../utils";
 import { GiSettingsKnobs } from "react-icons/gi";
 
 function ShoppingCart() {
@@ -15,8 +15,14 @@ function ShoppingCart() {
     const sorted = [...product].sort((a,b)=>b.price-a.price)
     setProduct(sorted)
   }
+  const handleRemoveFromCart=(product_id)=>{
+    removeCart(product_id)
+    const addCart = getAllProducts()
+    setProduct(addCart)
+  }
   return (
     <div className="container mx-auto my-20">
+     
       <div className="flex items-center justify-between mb-10 flex-col lg:flex-row gap-20 lg:gap-0">
         <div className="font-bold text-3xl">Cart</div>
         <div className="flex items-center gap-10 ">
@@ -49,7 +55,7 @@ function ShoppingCart() {
           <div>Your cart is empty!</div>
         ) : (
           product.map((product) => (
-            <Card key={product.product_id} product={product} />
+            <Card key={product.product_id} product={product} handleRemoveFromCart={handleRemoveFromCart} />
           ))
         )}
       </div>

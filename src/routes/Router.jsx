@@ -4,7 +4,6 @@ import ErrorPage from "../components/ErrorPage";
 import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
-
 import AllCards from "../components/AllCards";
 import ProductDetails from "../pages/ProductDetails";
 import ShoppingCart from "../components/ShoppingCart";
