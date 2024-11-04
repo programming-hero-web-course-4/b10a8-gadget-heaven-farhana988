@@ -13,9 +13,11 @@ import { CartProvider } from './components/CartProvider';
 
 createRoot(document.getElementById('root')).render(
   
-  <CartProvider>
+  
     <StrictMode>
+      <CartProvider>
    <RouterProvider router={router} />
+   </CartProvider>
   </StrictMode>
-  </CartProvider>,
+ ,
 )

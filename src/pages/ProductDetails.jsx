@@ -5,6 +5,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Heading from "../components/Heading";
 import { addToCart, addToWish, getAllProducts, getAllWishProducts } from "../utils";
 import { useCart } from '../components/CartProvider'; 
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function ProductDetails() {
   const products = useLoaderData();
@@ -48,15 +50,37 @@ function ProductDetails() {
 
   // Add to cart button
   const handleAddToCart = (product) => {
+    toast.success('Congratulations Added to cart', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+      });
     addToCart(product);
     setIsAdd(true);
-    updateCartCount((prevCount) => prevCount + 1); // Update context
+    updateCartCount((prevCount) => prevCount + 1); 
   };
 
   const handleAddToWish = (product) => {
+    toast.success('Congratulations Added to Wishlist', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+      });
     addToWish(product);
     setIsAddWish(true);
-    updateWishCount((prevCount) => prevCount + 1); // Update context
+    updateWishCount((prevCount) => prevCount + 1); 
   };
 
   return (
@@ -104,7 +128,7 @@ function ProductDetails() {
             <button
               disabled={isAdd}
               className="btn flex items-center gap-2 bg-[#9538E2] text-lg font-semibold rounded-2xl border-2 px-6 py-2"
-              onClick={() => handleAddToCart(details)} // Moved click handler to button
+              onClick={() => handleAddToCart(details)} 
             >
               <h2>Add To Cart</h2>
               <CiShoppingCart />
@@ -119,6 +143,7 @@ function ProductDetails() {
           </div>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
