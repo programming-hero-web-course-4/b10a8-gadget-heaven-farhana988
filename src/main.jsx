@@ -7,11 +7,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import router from './routes/Router';
+import { CartProvider } from './components/CartProvider';
 
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
+  <CartProvider>
+    <StrictMode>
    <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
+  </CartProvider>,
 )

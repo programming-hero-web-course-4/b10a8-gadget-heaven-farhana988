@@ -2,10 +2,15 @@
 
 import { NavLink, Outlet } from "react-router-dom";
 import Heading from "../components/Heading";
+import { Helmet } from "react-helmet";
 
 function Dashboard() {
   return (
     <div>
+        <Helmet>
+        <title>Dashboard - Gadget Heaven</title>
+        <meta name="description" content="Manage your gadgets and accessories in the dashboard." />
+      </Helmet>
       {/* heading and button */}
       <div className="bg-[#9538E2] py-16 pb-52">
         <Heading
