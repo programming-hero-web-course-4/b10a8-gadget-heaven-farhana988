@@ -7,6 +7,8 @@ import Dashboard from "../pages/Dashboard";
 
 import AllCards from "../components/AllCards";
 import ProductDetails from "../pages/ProductDetails";
+import ShoppingCart from "../components/ShoppingCart";
+import Wishlist from "../components/Wishlist";
 
 
 const router = createBrowserRouter([
@@ -41,6 +43,22 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        children:[
+          {
+              path: "/dashboard",
+              element:<ShoppingCart></ShoppingCart>
+            },
+            {
+              path: "cart",
+              element:<ShoppingCart></ShoppingCart>
+            },
+            {
+              path: "wishlist",
+              element:<Wishlist></Wishlist>
+            },
+            
+
+      ]
       },
       {
         path: "/productDetails/:product_id",

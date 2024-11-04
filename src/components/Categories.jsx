@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom'
 function Categories({ categories }) {
     // console.log(categories[1].category)
   return (
-    <div  className='flex flex-col gap-10 '>
+    <div  className='grid grid-cols-2 lg:flex lg:flex-col gap-10 p-6 lg:p-0 '>
       <NavLink to={'/'}  className={({ isActive }) =>
-          ` text-2xl font-semibold  ${isActive ? 'bg-[#9538E2] rounded-xl px-8 py-2' :
+          ` text-sm lg:text-2xl font-semibold  ${isActive ? 'bg-[#9538E2] rounded-xl px-8 py-2' :
              'px-8 py-2 rounded-xl bg-[#09080F0D]'}`
         }>All Product</NavLink>
     {categories.map(category => (
@@ -17,7 +17,7 @@ function Categories({ categories }) {
         to={`/category/${category.category}`}
         
         className={({ isActive }) =>
-          ` text-2xl font-semibold  ${isActive ? 'bg-[#9538E2] rounded-xl px-8 py-2' 
+          ` text-sm lg:text-2xl font-semibold  ${isActive ? 'bg-[#9538E2] rounded-xl px-8 py-2' 
             : 'px-8 py-2 rounded-xl bg-[#09080F0D]'}`
         }
       >

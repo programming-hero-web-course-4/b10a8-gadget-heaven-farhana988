@@ -4,19 +4,29 @@ import { CiHeart } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Heading from "../components/Heading";
+import { addToCart, getAllProducts, } from "../utils";
 
 function ProductDetails() {
   const products = useLoaderData();
-  // console.log(products)
+ 
   const { product_id } = useParams();
-  // console.log(product_id)
+ 
   const [details, setDetails] = useState([]);
-  console.log(details);
+
+
+
+  const [isAdd,setIsAdd]=useState(false)
   useEffect(() => {
+   
     const singleDetails = products.find(
       (details) => details.product_id == product_id
     );
     setDetails(singleDetails);
+    const cartItems = getAllProducts();
+    const isExist =   cartItems.find(item=> item.product_id ==singleDetails.product_id)
+   if(isExist){
+    setIsAdd(true)
+   }
   }, [product_id, products]);
 
   const {
@@ -27,6 +37,11 @@ function ProductDetails() {
     Specification,
     rating,
   } = details || {};
+// add to cart button
+  const handleAddToCart= product =>{
+    addToCart(product)
+    setIsAdd(true)
+  }
   return (
     <div className="relative">
       <div className="bg-[#9538E2] py-16 pb-52">
@@ -68,13 +83,19 @@ function ProductDetails() {
 
           <p>{rating}</p>
           <p></p>
+
+          {/* cart and wishlist btn */}
           <div className="flex items-center gap-6 text-lg text-white">
-            <button className="flex items-center gap-2 bg-[#9538E2] text-lg font-semibold
+            <button 
+          disabled={isAdd}
+            className=" btn flex items-center gap-2 bg-[#9538E2] text-lg font-semibold
              rounded-2xl border-2 px-6 py-2 ">
-              <h2>Add To Card</h2>
+              <h2 
+                
+              onClick={()=> handleAddToCart(details)}>Add To Card</h2>
               <CiShoppingCart></CiShoppingCart>
             </button>
-            <button className="  text-2xl rounded-full bg-white text-black p-3 ">
+            <button className="btn  text-2xl rounded-full bg-white text-black p-3 ">
               <CiHeart></CiHeart>
             </button>
           </div>

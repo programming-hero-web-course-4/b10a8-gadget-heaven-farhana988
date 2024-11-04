@@ -21,7 +21,7 @@ function AllCards() {
   return (
    
    
-      <div className="grid grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 p-20 lg:p-0 gap-6 ">
       {
           filterByCategories.map(product=> <Card key={product.product_id} product={product}></Card>)
       }
