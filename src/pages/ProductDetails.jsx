@@ -50,13 +50,13 @@ function ProductDetails() {
   const handleAddToCart = (product) => {
     addToCart(product);
     setIsAdd(true);
-    updateCartCount((prevCount) => prevCount + 1); 
+    updateCartCount((prevCount) => prevCount + 1); // Update context
   };
 
   const handleAddToWish = (product) => {
     addToWish(product);
     setIsAddWish(true);
-    updateWishCount((prevCount) => prevCount + 1);
+    updateWishCount((prevCount) => prevCount + 1); // Update context
   };
 
   return (
@@ -104,7 +104,7 @@ function ProductDetails() {
             <button
               disabled={isAdd}
               className="btn flex items-center gap-2 bg-[#9538E2] text-lg font-semibold rounded-2xl border-2 px-6 py-2"
-              onClick={() => handleAddToCart(details)}
+              onClick={() => handleAddToCart(details)} // Moved click handler to button
             >
               <h2>Add To Cart</h2>
               <CiShoppingCart />
