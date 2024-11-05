@@ -96,7 +96,7 @@ function ShoppingCart() {
             <h2 className="text-3xl font-bold mt-5">Payment Successfully Done</h2>
             <p className=" font-medium text-base text-[#09080F99]">Thanks for purchasing.
             </p>
-            <p className="font-medium text-base text-[#09080F99]">Total Cost: {totalPrice.toFixed(2)}K</p> 
+            <p className="font-medium text-base text-[#09080F99]">Total Cost: {totalPrice.toFixed(2)}$</p> 
             <button
               onClick={closeModal}
               className=" bg-[#11000028] text-[#09080F] px-32 py-2 rounded-full font-semibold

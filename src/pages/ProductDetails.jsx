@@ -107,14 +107,14 @@ function ProductDetails() {
         bg-white text-black rounded-2xl p-8 gap-9"
       >
         <img
-          className="lg:w-[424px] shadow-2xl shadow-[#9538e2d3] rounded-2xl"
+          className="w-[424px] h-[550px] shadow-2xl shadow-[#9538e2d3] rounded-2xl"
           src={product_image}
           alt=""
         />
         <div className="space-y-3 text-[#09080F]">
           <p className="font-semibold text-2xl">{product_title}</p>
           <p className="font-semibold text-xl text-[#09080FCC]">
-            Price: {price}$
+            Price: {price}
           </p>
 
           <button
