@@ -13,12 +13,13 @@ function Card({ product ,handleRemoveFromCart,handleRemoveFromWishlist }) {
   };
   const { product_image, product_title, price,product_id, } = product;
   return (
-    <div className="space-y-3 rounded-xl border-2 border-red-700 p-4 bg-white h-[340px]">
+    <div className="space-y-3 rounded-xl border-2 border-red-700 p-4 bg-white h-[355px]">
       <img className="w-[282px] h-[180px] rounded-xl border-2" src={product_image} alt="" />
-      <h1>{product_title}</h1>
-      <p>{price}</p>
+        <h1 className="font-semibold text-xl text-[#09080F]">{product_title}</h1>
+      <p className="font-medium text-base text-[#09080F99]">Price: {price}K</p>
       <button
-      className="text-[#9538E2] text-lg font-semibold rounded-2xl border-2 px-6 py-2">
+      className="text-[#9538E2] text-lg font-semibold rounded-2xl border-2
+       border-[#9538E2]  px-6 py-2  ">
         <Link to={`/productDetails/${product_id}`}>View Details</Link>
         </button>
 

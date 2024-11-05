@@ -10,8 +10,8 @@ function Statistics() {
         <meta name="description" content="View the latest statistics and insights on gadgets." />
       </Helmet>
       
-      
-      Statistics</div>
+      <h2 className="p-96 text-5xl">Statistics</h2>
+      </div>
   )
 }
 

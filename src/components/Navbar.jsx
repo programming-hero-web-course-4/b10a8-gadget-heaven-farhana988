@@ -26,8 +26,8 @@ function Navbar() {
 
   return (
     <div className={`bg-[${navbarBackgroundColor}]  ${textColor} 
-    mt-5 w-[1380px]  rounded-t-2xl py-4 fixed backdrop-blur-3xl top-0 left-8 z-50 `}>
-      <div className={` flex lg:px-32 rounded-b-none rounded-t-xl `}>
+    mt-5 w-[1380px]  rounded-2xl py-4 fixed backdrop-blur-3xl top-0 left-8 z-50 `}>
+      <div className={` flex lg:px-32  rounded-2xl `}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

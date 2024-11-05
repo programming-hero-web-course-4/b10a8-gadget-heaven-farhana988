@@ -19,14 +19,14 @@ function AllCards() {
    }
    },[category, products])
   return (
-   
-   
+   <div>
+  
       <div className="grid grid-cols-1 lg:grid-cols-3 p-20 lg:p-0 gap-6 ">
       {
           filterByCategories.map(product=> <Card key={product.product_id} product={product}></Card>)
       }
       </div>
-  
+      </div>
   )
 }
 

@@ -1,12 +1,13 @@
 [
+    
     {
         "product_id": "1",
-        "product_title": "Dell XPS 13",
-        "product_image": "url_to_image1.jpg",
-        "category": "Laptops",
-        "price": 999.99,
-        "description": "A high-performance laptop with a stunning display.",
-        "Specification": ["13.3-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+        "product_title": "MacBook Pro 14-inch",
+        "product_image": "url_to_image14.jpg",
+        "category": "MacBook",
+        "price": 1999.00,
+        "description": "Versatile laptop with outstanding performance.",
+        "Specification": ["14-inch Retina", "Apple M1", "16GB RAM", "512GB SSD"],
         "availability": true,
         "rating": 4.8
     },
@@ -142,17 +143,19 @@
         "availability": true,
         "rating": 4.9
     },
+    
+
     {
-        "product_id": "14",
-        "product_title": "MacBook Pro 14-inch",
-        "product_image": "url_to_image14.jpg",
-        "category": "MacBook",
-        "price": 1999.00,
-        "description": "Versatile laptop with outstanding performance.",
-        "Specification": ["14-inch Retina", "Apple M1", "16GB RAM", "512GB SSD"],
-        "availability": true,
-        "rating": 4.8
-    },
+            "product_id": "14",
+            "product_title": "Dell XPS 13",
+            "product_image": "url_to_image1.jpg",
+            "category": "Laptops",
+            "price": 999.99,
+            "description": "A high-performance laptop with a stunning display.",
+            "Specification": ["13.3-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+            "availability": true,
+            "rating": 4.8
+        },
     {
         "product_id": "15",
         "product_title": "iPhone 13",
