@@ -12,7 +12,7 @@ function Dashboard() {
         <meta name="description" content="Manage your gadgets and accessories in the dashboard." />
       </Helmet>
       {/* heading and button */}
-      <div className="bg-[#9538E2] py-16 pb-52">
+      <div className="bg-[#9538E2]  mt-32 py-20 text-white">
         <Heading
           title={"Dashboard"}
           subtitle={

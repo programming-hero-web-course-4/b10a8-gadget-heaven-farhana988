@@ -54,7 +54,7 @@ function ShoppingCart() {
       <div className="flex items-center justify-between mb-10 flex-col lg:flex-row gap-20 lg:gap-0">
         <div className="font-bold text-3xl">Cart</div>
         <div className="flex items-center gap-10 ">
-          <h2>Total cost: ${totalPrice.toFixed(2)}</h2>
+          <h2 className=" font-bold text-2xl">Total cost: ${totalPrice.toFixed(2)}</h2>
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
             <button
               onClick={handleSort}
@@ -76,7 +76,7 @@ function ShoppingCart() {
       </div>
       <div className="px-10 lg:px-32 space-y-6">
         {isCartEmpty ? (
-          <div>Your cart is empty!</div>
+          <div className="text-5xl text-center font-bold">Your cart is empty!</div>
         ) : (
           product.map((product) => (
             <Card key={product.product_id} product={product} handleRemoveFromCart={handleRemoveFromCart} />
