@@ -30,6 +30,7 @@ function AllCards() {
   )
 }
 
+
 AllCards.propTypes = {
     categories:PropTypes.object,
 }

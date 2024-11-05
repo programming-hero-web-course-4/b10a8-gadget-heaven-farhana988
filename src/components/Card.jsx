@@ -34,7 +34,7 @@ function Card({ product, handleRemoveFromCart, handleRemoveFromWishlist }) {
       )}
       {/* delete btn shesh */}
       <h1 className="font-semibold text-xl text-[#09080F]">{product_title}</h1>
-      <p className="font-medium text-base text-[#09080F99]">Price: {price}K</p>
+      <p className="font-medium text-base text-[#09080F99]">Price: {price}$</p>
 
       <button
         className="text-[#9538E2] text-lg font-semibold rounded-2xl border-2

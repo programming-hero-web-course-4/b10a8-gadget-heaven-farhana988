@@ -96,7 +96,7 @@ function ProductDetails() {
         <Heading
           title={"Product Details"}
           subtitle={
-            "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+            "Discover everything you need to know about our latest gadgets and accessories! From features and specifications to customer ratings and pricing, all the information to make an informed decision."
           }
         />
       </div>
@@ -114,7 +114,7 @@ function ProductDetails() {
         <div className="space-y-3 text-[#09080F]">
           <p className="font-semibold text-2xl">{product_title}</p>
           <p className="font-semibold text-xl text-[#09080FCC]">
-            Price: {price}K
+            Price: {price}$
           </p>
 
           <button

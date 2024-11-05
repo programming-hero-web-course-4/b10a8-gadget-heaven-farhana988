@@ -56,7 +56,7 @@ function ShoppingCart() {
       <div className="flex items-center justify-between mb-10 flex-col lg:flex-row gap-20 lg:gap-0">
         <div className="font-bold text-3xl">Cart</div>
         <div className="flex items-center gap-10 ">
-          <h2 className=" font-bold text-2xl">Total cost: {totalPrice.toFixed(2)}K</h2>
+          <h2 className=" font-bold text-2xl">Total cost: {totalPrice.toFixed(2)}$</h2>
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
             <button
               onClick={handleSort}

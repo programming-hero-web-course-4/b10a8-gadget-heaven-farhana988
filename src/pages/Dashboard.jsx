@@ -16,7 +16,7 @@ function Dashboard() {
         <Heading
           title={"Dashboard"}
           subtitle={
-            "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+            "Your perfect tech haul is just a click away! Add your favorite gadgets and accessories to the cart and easily proceed to checkout when you're ready to buy."
           }
         ></Heading>
         {/* buttons */}

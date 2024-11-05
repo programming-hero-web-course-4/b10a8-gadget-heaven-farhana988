@@ -8,7 +8,7 @@ import AllCards from "../components/AllCards";
 import ProductDetails from "../pages/ProductDetails";
 import ShoppingCart from "../components/ShoppingCart";
 import Wishlist from "../components/Wishlist";
-
+import BestSeller from "../pages/BestSeller";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +58,11 @@ const router = createBrowserRouter([
             
 
       ]
+      },
+      {
+        path: "/bestSeller",
+        element: <BestSeller></BestSeller>,
+        loader: ()=> fetch('../categories.json'),
       },
       {
         path: "/productDetails/:product_id",

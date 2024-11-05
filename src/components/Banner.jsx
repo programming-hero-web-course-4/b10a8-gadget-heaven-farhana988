@@ -9,9 +9,9 @@ function Banner() {
      text-center relative h-[400px] lg:h-[750px] pt-36 mt-8 w-[1380px] mx-auto"
     >
       <Heading
-        title={"Upgrade Your Tech Accessorize with Gadget Heaven Accessories"}
+        title={"Elevate your devices with premium accessories that blend style and performance "}
         subtitle={
-          "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+          " From futuristic wearables to game-changing accessories, discover gadgets that bring convenience, style, and performance together."
         }
       ></Heading>
       <button className="bg-white rounded-2xl px-9 py-3 text-black font-bold text-xl mt-6">

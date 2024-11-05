@@ -1,32 +1,45 @@
 [
   {
     "product_id": "1",
+    "product_image": "https://i.ibb.co.com/fMF2pxM/Mac-Book-Pro-14-inch.jpg",
     "product_title": "Dell XPS 13",
-    "category": "Laptops"
+    "category": "Laptops",
+  "best_selling_review": "The Dell XPS 13 delivers an amazing balance of performance, portability, and display quality. Its compact design makes it perfect for on-the-go productivity, and the battery life is impressive!"
   },
   {
     "product_id": "7",
+    "product_image": "https://i.ibb.co.com/H4JSr9k/Samsung-Galaxy-S21.jpg",
     "product_title": "Samsung Galaxy S21",
-    "category": "Phones"
+    "category": "Phones",
+    "best_selling_review": "The Samsung Galaxy S21 offers top-notch performance, a stunning AMOLED display, and a sleek design. It's a fantastic value for anyone looking for a high-end Android phone with excellent camera capabilities."
   },
   {
     "product_id": "10",
+    "product_image": "https://i.ibb.co.com/s5t0RsY/Samsung-Galaxy-Watch-3.jpg",
     "product_title": "Samsung Galaxy Watch 3",
-    "category": "Smart Watches"
+    "category": "Smart Watches",
+    "best_selling_review": "The Galaxy Watch 3 is a premium smartwatch with outstanding features including fitness tracking, heart rate monitoring, and elegant design. It's a great choice for those seeking both style and functionality."
   },
   {
     "product_id": "11",
+    "product_image": "https://i.ibb.co.com/Hthh4QT/Logitech-MX-Master-3.png",
     "product_title": "Logitech MX Master 3",
-    "category": "Accessories"
+    "category": "Accessories",
+    "best_selling_review": "The Logitech MX Master 3 is a game-changer for productivity. With its ergonomic design, customizable buttons, and precision tracking, it's perfect for anyone who spends hours on the computer."
   },
   {
     "product_id": "13",
+    "product_image": "https://i.ibb.co.com/s12x0GZ/Mac-Book-Pro-16-inch.png",
     "product_title": "MacBook Pro 16-inch",
-    "category": "MacBook"
+    "category": "MacBook",
+    "best_selling_review": "The MacBook Pro 16-inch is a powerhouse for creative professionals. The stunning Retina display, combined with powerful processing and excellent audio, makes it ideal for demanding tasks like video editing and graphic design."
   },
   {
     "product_id": "16",
+    "product_image": "https://i.ibb.co.com/p1Phsy6/i-Phone-12.jpg",
     "product_title": "iPhone 12",
-    "category": "iPhone"
+    "category": "iPhone",
+    "best_selling_review": "The iPhone 12 is a fantastic all-around device. Its A14 Bionic chip offers lightning-fast performance, the camera system is excellent, and the OLED display is a treat for the eyes. It’s a solid choice for anyone in the Apple ecosystem."
   }
 ]
+
