@@ -1,4 +1,3 @@
-// Navbar.js
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { CiShoppingCart, CiHeart } from "react-icons/ci";
 import { useCart } from '../components/CartProvider'; 
@@ -7,12 +6,28 @@ function Navbar() {
   const location = useLocation();
   const { cartCount, wishCount } = useCart();
 
-  const navbarBackgroundColor = location.pathname === '/' ? '#9538E2' : '#ffffff'; 
-  const textColor = location.pathname === '/' ? 'text-white' : 'text-black';
+  const navbarBackgroundColor =( location.pathname === '/' || 
+    location.pathname === '/category/Laptops'  || 
+   location.pathname === '/category/Phones' || 
+   location.pathname === '/category/Smart%20Watches' || 
+   location.pathname === '/category/Accessories' || 
+   location.pathname === '/category/MacBook' || 
+   location.pathname === '/category/iPhone' 
+  )
+    ? '#9538E2' : '#ffffff'; 
+  const textColor = ( location.pathname === '/' || 
+    location.pathname === '/category/Laptops'  || 
+   location.pathname === '/category/Phones' || 
+   location.pathname === '/category/Smart%20Watches' || 
+   location.pathname === '/category/Accessories' || 
+   location.pathname === '/category/MacBook' || 
+   location.pathname === '/category/iPhone' 
+  )? 'text-white' : 'text-black';
 
   return (
-    <div className={`bg-[${navbarBackgroundColor}]`}>
-      <div className={`navbar lg:px-32 rounded-b-none rounded-t-xl ${textColor}`}>
+    <div className={`bg-[${navbarBackgroundColor}]  ${textColor} 
+    mt-5 w-[1380px]  rounded-t-2xl py-4 fixed backdrop-blur-3xl top-0 left-8 z-50 `}>
+      <div className={` flex lg:px-32 rounded-b-none rounded-t-xl `}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +59,7 @@ function Navbar() {
             <li><NavLink to="/dashboard">Dashboard</NavLink></li>
           </ul>
         </div>
-        <div className="navbar-end gap-4 mr-7">
+        <div className="navbar-end flex  gap-4 mr-7">
           <Link className="lg:text-3xl rounded-full bg-white text-black p-3" to="/cart">
             <CiShoppingCart />
             {cartCount > 0 && (
