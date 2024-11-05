@@ -3,7 +3,7 @@
     {
         "product_id": "1",
         "product_title": "MacBook Pro 14-inch",
-        "product_image": "url_to_image14.jpg",
+        "product_image": "https://i.ibb.co.com/fMF2pxM/Mac-Book-Pro-14-inch.jpg",
         "category": "MacBook",
         "price": 1999.00,
         "description": "Versatile laptop with outstanding performance.",
@@ -14,7 +14,7 @@
     {
         "product_id": "2",
         "product_title": "Apple MacBook Air",
-        "product_image": "url_to_image2.jpg",
+        "product_image": "https://i.ibb.co.com/wySV6Cv/Apple-Mac-Book-Air.jpg",
         "category": "Laptops",
         "price": 1099.00,
         "description": "Lightweight laptop with exceptional battery life.",
@@ -25,7 +25,7 @@
     {
         "product_id": "3",
         "product_title": "HP Spectre x360",
-        "product_image": "url_to_image3.jpg",
+        "product_image": "https://i.ibb.co.com/mT0JJCW/HP-Spectre-x360.jpg",
         "category": "Laptops",
         "price": 1299.99,
         "description": "2-in-1 convertible laptop with sleek design.",
@@ -36,7 +36,7 @@
     {
         "product_id": "4",
         "product_title": "Lenovo ThinkPad X1 Carbon",
-        "product_image": "url_to_image4.jpg",
+        "product_image": "https://i.ibb.co.com/1JMmcSL/Lenovo-Think-Pad-X1-Carbon.png",
         "category": "Laptops",
         "price": 1399.00,
         "description": "Durable and lightweight business laptop.",
@@ -47,7 +47,7 @@
     {
         "product_id": "5",
         "product_title": "Asus ZenBook 14",
-        "product_image": "url_to_image5.jpg",
+        "product_image": "https://i.ibb.co.com/7NfgS5L/Asus-Zen-Book-14.jpg",
         "category": "Laptops",
         "price": 849.99,
         "description": "Compact laptop with powerful performance.",
@@ -58,7 +58,7 @@
     {
         "product_id": "6",
         "product_title": "Acer Swift 3",
-        "product_image": "url_to_image6.jpg",
+        "product_image": "https://i.ibb.co.com/Scp5VJD/Acer-Swift-3.png",
         "category": "Laptops",
         "price": 699.99,
         "description": "Affordable and lightweight laptop.",
@@ -69,7 +69,7 @@
     {
         "product_id": "7",
         "product_title": "Samsung Galaxy S21",
-        "product_image": "url_to_image7.jpg",
+        "product_image": "https://i.ibb.co.com/H4JSr9k/Samsung-Galaxy-S21.jpg",
         "category": "Phones",
         "price": 799.99,
         "description": "Flagship smartphone with impressive camera.",
@@ -79,8 +79,8 @@
     },
     {
         "product_id": "8",
-        "product_title": "iPhone 12",
-        "product_image": "url_to_image8.jpg",
+        "product_title": "oneplus nord n30 se",
+        "product_image": "https://i.ibb.co.com/ng18Zqt/oneplus-nord-n30-se.jpg",
         "category": "Phones",
         "price": 699.99,
         "description": "Powerful smartphone with a stunning design.",
@@ -91,7 +91,7 @@
     {
         "product_id": "9",
         "product_title": "Apple Watch Series 6",
-        "product_image": "url_to_image9.jpg",
+        "product_image": "https://i.ibb.co.com/1mBj6Tp/Apple-Watch-Series-6.png",
         "category": "Smart Watches",
         "price": 399.99,
         "description": "Smart watch with health and fitness tracking.",
@@ -102,7 +102,7 @@
     {
         "product_id": "10",
         "product_title": "Samsung Galaxy Watch 3",
-        "product_image": "url_to_image10.jpg",
+        "product_image": "https://i.ibb.co.com/s5t0RsY/Samsung-Galaxy-Watch-3.jpg",
         "category": "Smart Watches",
         "price": 399.99,
         "description": "Stylish smartwatch with advanced health features.",
@@ -113,7 +113,7 @@
     {
         "product_id": "11",
         "product_title": "Logitech MX Master 3",
-        "product_image": "url_to_image11.jpg",
+        "product_image": "https://i.ibb.co.com/Hthh4QT/Logitech-MX-Master-3.png",
         "category": "Accessories",
         "price": 99.99,
         "description": "Advanced wireless mouse with customizable buttons.",
@@ -124,7 +124,7 @@
     {
         "product_id": "12",
         "product_title": "Apple AirPods Pro",
-        "product_image": "url_to_image12.jpg",
+        "product_image": "https://i.ibb.co.com/TcFKK8k/Apple-Air-Pods-Pro.png",
         "category": "Accessories",
         "price": 249.00,
         "description": "Wireless earbuds with active noise cancellation.",
@@ -135,7 +135,7 @@
     {
         "product_id": "13",
         "product_title": "MacBook Pro 16-inch",
-        "product_image": "url_to_image13.jpg",
+        "product_image": "https://i.ibb.co.com/s12x0GZ/Mac-Book-Pro-16-inch.png",
         "category": "MacBook",
         "price": 2399.00,
         "description": "Powerful laptop designed for professionals.",
@@ -148,7 +148,7 @@
     {
             "product_id": "14",
             "product_title": "Dell XPS 13",
-            "product_image": "url_to_image1.jpg",
+            "product_image": "https://i.ibb.co.com/0s1dvdG/Dell-XPS-13.jpg",
             "category": "Laptops",
             "price": 999.99,
             "description": "A high-performance laptop with a stunning display.",
@@ -159,7 +159,7 @@
     {
         "product_id": "15",
         "product_title": "iPhone 13",
-        "product_image": "url_to_image8.jpg",
+        "product_image": "https://i.ibb.co.com/bJ81zgy/i-Phone-13.jpg",
         "category": "iPhone",
         "price": 799.00,
         "description": "Powerful smartphone with advanced features.",
@@ -170,7 +170,7 @@
     {
         "product_id": "16",
         "product_title": "iPhone 12",
-        "product_image": "url_to_image9.jpg",
+        "product_image": "https://i.ibb.co.com/p1Phsy6/i-Phone-12.jpg",
         "category": "iPhone",
         "price": 699.99,
         "description": "A stunning design with powerful performance.",

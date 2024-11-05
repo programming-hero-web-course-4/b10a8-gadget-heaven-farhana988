@@ -60,7 +60,8 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-end flex  gap-4 mr-7">
-          <Link className="lg:text-3xl rounded-full bg-white text-black p-3" to="/cart">
+          <Link 
+          className="lg:text-3xl rounded-full bg-white text-black p-3" to="/cart">
             <CiShoppingCart />
             {cartCount > 0 && (
               <span className="absolute top-4 right-56 bg-red-500 text-white text-xs rounded-full px-1">{cartCount}</span>

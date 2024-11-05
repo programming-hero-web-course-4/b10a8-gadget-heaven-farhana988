@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Card from "./Card";
 import { getAllProducts, removeCart, clearCart } from "../utils"; 
 import { GiSettingsKnobs } from "react-icons/gi";
+import modal from '../assets/Group.png'
+
 
 function ShoppingCart() {
   const [product, setProduct] = useState([]);
@@ -54,7 +56,7 @@ function ShoppingCart() {
       <div className="flex items-center justify-between mb-10 flex-col lg:flex-row gap-20 lg:gap-0">
         <div className="font-bold text-3xl">Cart</div>
         <div className="flex items-center gap-10 ">
-          <h2 className=" font-bold text-2xl">Total cost: ${totalPrice.toFixed(2)}</h2>
+          <h2 className=" font-bold text-2xl">Total cost: {totalPrice.toFixed(2)}K</h2>
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
             <button
               onClick={handleSort}
@@ -74,9 +76,10 @@ function ShoppingCart() {
           </div>
         </div>
       </div>
-      <div className="px-10 lg:px-32 space-y-6">
+      <div className="px-10 lg:px-32 space-y-6 ">
         {isCartEmpty ? (
-          <div className="text-5xl text-center font-bold">Your cart is empty!</div>
+          <div className="text-5xl text-center font-bold shadow-2xl shadow-[#9538e2d3] 
+          rounded-2xl py-20">Your cart is empty!</div>
         ) : (
           product.map((product) => (
             <Card key={product.product_id} product={product} handleRemoveFromCart={handleRemoveFromCart} />
@@ -87,13 +90,17 @@ function ShoppingCart() {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-8 rounded shadow-lg">
-            <h2 className="text-xl font-bold">Congratulations!</h2>
-            <p className="mt-4">Your purchase was successful!</p>
-            <p className="mt-2">Total Cost: ${totalPrice.toFixed(2)}</p> 
+          <div className="bg-white p-8 shadow-lg flex items-center justify-center text-center
+          flex-col w-96 rounded-2xl gap-3">
+            <img src={modal} alt="" />
+            <h2 className="text-3xl font-bold mt-5">Payment Successfully Done</h2>
+            <p className=" font-medium text-base text-[#09080F99]">Thanks for purchasing.
+            </p>
+            <p className="font-medium text-base text-[#09080F99]">Total Cost: {totalPrice.toFixed(2)}K</p> 
             <button
               onClick={closeModal}
-              className="mt-6 bg-[#9538E2] text-white px-4 py-2 rounded"
+              className=" bg-[#11000028] text-[#09080F] px-32 py-2 rounded-full font-semibold
+              text-lg border-2 border-[#9538E2]"
             >
               Close
             </button>

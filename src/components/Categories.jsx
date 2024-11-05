@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 // eslint-disable-next-line react/prop-types
 function Categories({ categories }) {
-    // console.log(categories[1].category)
+   
   return (
-    <div  className='grid grid-cols-2 lg:flex lg:flex-col gap-10 p-6 lg:p-0 '>
+    <div  className='grid grid-cols-2 lg:flex lg:flex-col gap-10 p-6 lg:p-0
+     rounded-2xl'>
       <NavLink to={'/'}  className={({ isActive }) =>
           ` text-sm lg:text-2xl font-semibold  ${isActive ? 'bg-[#9538E2] rounded-xl px-8 py-2' :
              'px-8 py-2 rounded-xl bg-[#09080F0D]'}`

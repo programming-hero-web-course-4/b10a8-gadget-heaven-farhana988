@@ -2,7 +2,7 @@ import Heading from "./Heading";
 
 function Footer() {
   return (
-    <div className="mt-96 bg-[#FFFFFF] text-[#09080F]">
+    <div className="mt-20 pt-10 bg-[#FFFFFF] text-[#09080F]">
       <Heading
         title={"Gadget Heaven"}
         subtitle={"Leading the way in cutting-edge technology and innovation."}

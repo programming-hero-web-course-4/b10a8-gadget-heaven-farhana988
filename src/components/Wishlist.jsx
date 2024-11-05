@@ -22,9 +22,9 @@ function Wishlist() {
         <div className="font-bold text-3xl">WishList</div>
        
     
-        <div className="px-10 lg:px-32 space-y-6  mt-20">
+        <div className="px-10 lg:px-32  space-y-6  mt-20   rounded-2xl">
         {product.length === 0 ? (
-          <div className="text-5xl text-center font-bold">Your wishlist is empty!</div>
+          <div className="text-5xl text-center font-bold py-20 rounded-2xl shadow-2xl shadow-[#9538e2d3]">Your wishlist is empty!</div>
         ) : (
           product.map((product) => (
             <Card key={product.product_id} product={product} handleRemoveFromWishlist={handleRemoveFromWishlist}/>
